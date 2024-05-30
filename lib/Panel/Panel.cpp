@@ -79,3 +79,383 @@ int Panel::_wrapIndex(int a, int b)
 {
     return ((a % b) + b) % b;
 }
+
+void Panel::showNumber(int number, int x_offset, int y_offset)
+{
+
+    for (int i= 0; i <7; i++)
+        {
+            for (int j = 0; j < 7; j++)
+            {
+                setPixel(i, j, 0);
+            }
+        }
+        show();
+        
+    switch (number)
+    {
+        case 0:
+            setPixel(0 + y_offset,2 + x_offset,1);
+            setPixel(0 + y_offset,3 + x_offset,1);
+            setPixel(0 + y_offset,4 + x_offset,1);
+            setPixel(0 + y_offset,5 + x_offset,1);
+            
+            setPixel(1 + y_offset,1 + x_offset,1);
+            setPixel(1 + y_offset,2 + x_offset,1);
+            setPixel(1 + y_offset,3 + x_offset,1);
+            setPixel(1 + y_offset,4 + x_offset,1);
+            setPixel(1 + y_offset,5 + x_offset,1);
+            setPixel(1 + y_offset,6 + x_offset,1);
+
+            setPixel(2 + y_offset,1 + x_offset,1);
+            setPixel(2 + y_offset,2 + x_offset,1);
+            setPixel(2 + y_offset,5 + x_offset,1);
+            setPixel(2 + y_offset,6 + x_offset,1);
+
+            setPixel(3 + y_offset,1 + x_offset,1);
+            setPixel(3 + y_offset,2 + x_offset,1);
+            setPixel(3 + y_offset,5 + x_offset,1);
+            setPixel(3 + y_offset,6 + x_offset,1);
+
+            setPixel(4 + y_offset,1 + x_offset,1);
+            setPixel(4 + y_offset,2 + x_offset,1);
+            setPixel(4 + y_offset,5 + x_offset,1);
+            setPixel(4 + y_offset,6 + x_offset,1);
+
+            setPixel(5 + y_offset,1 + x_offset,1);
+            setPixel(5 + y_offset,2 + x_offset,1);
+            setPixel(5 + y_offset,3 + x_offset,1);
+            setPixel(5 + y_offset,4 + x_offset,1);
+            setPixel(5 + y_offset,5 + x_offset,1);
+            setPixel(5 + y_offset,6 + x_offset,1);
+
+            setPixel(6 + y_offset,2 + x_offset,1);
+            setPixel(6 + y_offset,3 + x_offset,1);
+            setPixel(6 + y_offset,4 + x_offset,1);
+            setPixel(6 + y_offset,5 + x_offset,1);
+            break;
+
+
+        case 1:
+            setPixel(0 + y_offset,3 + x_offset,1);
+            setPixel(0 + y_offset,4 + x_offset,1);
+            
+            
+            setPixel(1 + y_offset,2 + x_offset,1);
+            setPixel(1 + y_offset,3 + x_offset,1);
+            setPixel(1 + y_offset,4 + x_offset,1);
+
+            setPixel(2 + y_offset,3 + x_offset,1);
+            setPixel(2 + y_offset,4 + x_offset,1);
+
+            setPixel(3 + y_offset,3 + x_offset,1);
+            setPixel(3 + y_offset,4 + x_offset,1);
+
+            setPixel(4 + y_offset,3 + x_offset,1);
+            setPixel(4 + y_offset,4 + x_offset,1);
+
+            setPixel(5 + y_offset,3 + x_offset,1);
+            setPixel(5 + y_offset,4 + x_offset,1);
+
+            setPixel(6 + y_offset,3 + x_offset,1);
+            setPixel(6 + y_offset,4 + x_offset,1);
+
+            show();
+            break;
+
+        case 2:
+            setPixel(0 + y_offset,2 + x_offset,1);
+            setPixel(0 + y_offset,3 + x_offset,1);
+            setPixel(0 + y_offset,4 + x_offset,1);
+            setPixel(0 + y_offset,5 + x_offset,1);
+
+            setPixel(1 + y_offset,1 + x_offset,1);
+            setPixel(1 + y_offset,2 + x_offset,1);
+            setPixel(1 + y_offset,3 + x_offset,1);
+            setPixel(1 + y_offset,4 + x_offset,1);
+            setPixel(1 + y_offset,5 + x_offset,1);
+            setPixel(1 + y_offset,6 + x_offset,1);
+
+            setPixel(2 + y_offset,5 + x_offset,1);
+            setPixel(2 + y_offset,6 + x_offset,1);
+
+            setPixel(3 + y_offset,3 + x_offset,1);
+            setPixel(3 + y_offset,4 + x_offset,1);
+            setPixel(3 + y_offset,5 + x_offset,1);
+
+            setPixel(4 + y_offset,2 + x_offset,1);
+            setPixel(4 + y_offset,3 + x_offset,1);
+
+            setPixel(5 + y_offset,1 + x_offset,1);
+            setPixel(5 + y_offset,2 + x_offset,1);
+            setPixel(5 + y_offset,3 + x_offset,1);
+            setPixel(5 + y_offset,4 + x_offset,1);
+            setPixel(5 + y_offset,5 + x_offset,1);
+            setPixel(5 + y_offset,6 + x_offset,1);
+
+            setPixel(6 + y_offset,1 + x_offset,1);
+            setPixel(6 + y_offset,2 + x_offset,1);
+            setPixel(6 + y_offset,3 + x_offset,1);
+            setPixel(6 + y_offset,4 + x_offset,1);
+            setPixel(6 + y_offset,5 + x_offset,1);
+            setPixel(6 + y_offset,6 + x_offset,1);
+
+            show();
+            break;
+
+        case 3:
+            setPixel(0 + y_offset,2 + x_offset,1);
+            setPixel(0 + y_offset,3 + x_offset,1);
+            setPixel(0 + y_offset,4 + x_offset,1);
+            setPixel(0 + y_offset,5 + x_offset,1);
+
+            setPixel(1 + y_offset,1 + x_offset,1);
+            setPixel(1 + y_offset,2 + x_offset,1);
+            setPixel(1 + y_offset,3 + x_offset,1);
+            setPixel(1 + y_offset,4 + x_offset,1);
+            setPixel(1 + y_offset,5 + x_offset,1);
+            setPixel(1 + y_offset,6 + x_offset,1);
+
+            setPixel(2 + y_offset,5 + x_offset,1);
+            setPixel(2 + y_offset,6 + x_offset,1);
+
+            setPixel(3 + y_offset,1 + x_offset,1);
+            setPixel(3 + y_offset,2 + x_offset,1);
+            setPixel(3 + y_offset,3 + x_offset,1);
+            setPixel(3 + y_offset,4 + x_offset,1);
+            setPixel(3 + y_offset,5 + x_offset,1);
+            setPixel(3 + y_offset,6 + x_offset,1);
+
+            setPixel(4 + y_offset,5 + x_offset,1);
+            setPixel(4 + y_offset,6 + x_offset,1);
+
+            setPixel(5 + y_offset,1 + x_offset,1);
+            setPixel(5 + y_offset,2 + x_offset,1);
+            setPixel(5 + y_offset,3 + x_offset,1);
+            setPixel(5 + y_offset,4 + x_offset,1);
+            setPixel(5 + y_offset,5 + x_offset,1);
+            setPixel(5 + y_offset,6 + x_offset,1);
+
+            setPixel(6 + y_offset,2 + x_offset,1);
+            setPixel(6 + y_offset,3 + x_offset,1);
+            setPixel(6 + y_offset,4 + x_offset,1);
+            setPixel(6 + y_offset,5 + x_offset,1);
+
+        case 4:
+            setPixel(0 + y_offset,1 + x_offset,1);
+            setPixel(0 + y_offset,2 + x_offset,1);
+            setPixel(0 + y_offset,5 + x_offset,1);
+            setPixel(0 + y_offset,6 + x_offset,1);
+
+            setPixel(1 + y_offset,1 + x_offset,1);
+            setPixel(1 + y_offset,2 + x_offset,1);
+            setPixel(1 + y_offset,5 + x_offset,1);
+            setPixel(1 + y_offset,6 + x_offset,1);
+
+            setPixel(2 + y_offset,1 + x_offset,1);
+            setPixel(2 + y_offset,2 + x_offset,1);
+            setPixel(2 + y_offset,5 + x_offset,1);
+            setPixel(2 + y_offset,6 + x_offset,1);
+
+            setPixel(3 + y_offset,1 + x_offset,1);
+            setPixel(3 + y_offset,2 + x_offset,1);
+            setPixel(3 + y_offset,3 + x_offset,1);
+            setPixel(3 + y_offset,4 + x_offset,1);
+            setPixel(3 + y_offset,5 + x_offset,1);
+            setPixel(3 + y_offset,6 + x_offset,1);
+
+            setPixel(4 + y_offset,5 + x_offset,1);
+            setPixel(4 + y_offset,6 + x_offset,1);
+
+            setPixel(5 + y_offset,5 + x_offset,1);
+            setPixel(5 + y_offset,6 + x_offset,1);
+
+            setPixel(6 + y_offset,5 + x_offset,1);
+            setPixel(6 + y_offset,6 + x_offset,1);
+
+        case 5:
+            setPixel(0 + y_offset,1 + x_offset,1);
+            setPixel(0 + y_offset,2 + x_offset,1);
+            setPixel(0 + y_offset,3 + x_offset,1);
+            setPixel(0 + y_offset,4 + x_offset,1);
+            setPixel(0 + y_offset,5 + x_offset,1);
+            setPixel(0 + y_offset,6 + x_offset,1);
+
+            setPixel(1 + y_offset,1 + x_offset,1);
+            setPixel(1 + y_offset,2 + x_offset,1);
+            setPixel(1 + y_offset,3 + x_offset,1);
+            setPixel(1 + y_offset,4 + x_offset,1);
+            setPixel(1 + y_offset,5 + x_offset,1);
+            setPixel(1 + y_offset,6 + x_offset,1);
+
+            setPixel(2 + y_offset,1 + x_offset,1);
+            setPixel(2 + y_offset,2 + x_offset,1);
+
+            setPixel(3 + y_offset,1 + x_offset,1);
+            setPixel(3 + y_offset,2 + x_offset,1);
+            setPixel(3 + y_offset,3 + x_offset,1);
+            setPixel(3 + y_offset,4 + x_offset,1);
+            setPixel(3 + y_offset,5 + x_offset,1);
+            setPixel(3 + y_offset,6 + x_offset,1);
+
+            setPixel(4 + y_offset,5 + x_offset,1);
+            setPixel(4 + y_offset,6 + x_offset,1);
+
+            setPixel(5 + y_offset,1 + x_offset,1);
+            setPixel(5 + y_offset,2 + x_offset,1);
+            setPixel(5 + y_offset,3 + x_offset,1);
+            setPixel(5 + y_offset,4 + x_offset,1);
+            setPixel(5 + y_offset,5 + x_offset,1);
+            setPixel(5 + y_offset,6 + x_offset,1);
+
+            setPixel(6 + y_offset,2 + x_offset,1);
+            setPixel(6 + y_offset,3 + x_offset,1);
+            setPixel(6 + y_offset,4 + x_offset,1);
+            setPixel(6 + y_offset,5 + x_offset,1);
+
+        case 6:
+            setPixel(0 + y_offset,2 + x_offset,1);
+            setPixel(0 + y_offset,3 + x_offset,1);
+            setPixel(0 + y_offset,4 + x_offset,1);
+            setPixel(0 + y_offset,5 + x_offset,1);
+
+            setPixel(1 + y_offset,1 + x_offset,1);
+            setPixel(1 + y_offset,2 + x_offset,1);
+            setPixel(1 + y_offset,3 + x_offset,1);
+            setPixel(1 + y_offset,4 + x_offset,1);
+            setPixel(1 + y_offset,5 + x_offset,1);
+            setPixel(1 + y_offset,6 + x_offset,1);
+
+            setPixel(2 + y_offset,1 + x_offset,1);
+            setPixel(2 + y_offset,2 + x_offset,1);
+
+            setPixel(3 + y_offset,1 + x_offset,1);
+            setPixel(3 + y_offset,2 + x_offset,1);
+            setPixel(3 + y_offset,3 + x_offset,1);
+            setPixel(3 + y_offset,4 + x_offset,1);
+            setPixel(3 + y_offset,5 + x_offset,1);
+
+            setPixel(4 + y_offset,1 + x_offset,1);
+            setPixel(4 + y_offset,2 + x_offset,1);
+            setPixel(4 + y_offset,5 + x_offset,1);
+            setPixel(4 + y_offset,6 + x_offset,1);
+
+            setPixel(5 + y_offset,1 + x_offset,1);
+            setPixel(5 + y_offset,2 + x_offset,1);
+            setPixel(5 + y_offset,3 + x_offset,1);
+            setPixel(5 + y_offset,4 + x_offset,1);
+            setPixel(5 + y_offset,5 + x_offset,1);
+            setPixel(5 + y_offset,6 + x_offset,1);
+
+            setPixel(6 + y_offset,2 + x_offset,1);
+            setPixel(6 + y_offset,3 + x_offset,1);
+            setPixel(6 + y_offset,4 + x_offset,1);
+            setPixel(6 + y_offset,5 + x_offset,1);
+
+        case 7:
+
+            setPixel(0 + y_offset,1 + x_offset,1);
+            setPixel(0 + y_offset,2 + x_offset,1);
+            setPixel(0 + y_offset,3 + x_offset,1);
+            setPixel(0 + y_offset,4 + x_offset,1);
+            setPixel(0 + y_offset,5 + x_offset,1);
+            setPixel(0 + y_offset,6 + x_offset,1);
+
+            setPixel(1 + y_offset,1 + x_offset,1);
+            setPixel(1 + y_offset,2 + x_offset,1);
+            setPixel(1 + y_offset,3 + x_offset,1);
+            setPixel(1 + y_offset,4 + x_offset,1);
+            setPixel(1 + y_offset,5 + x_offset,1);
+            setPixel(1 + y_offset,6 + x_offset,1);
+
+            setPixel(2 + y_offset,5 + x_offset,1);
+            setPixel(2 + y_offset,6 + x_offset,1);
+
+            setPixel(3 + y_offset,3 + x_offset,1);
+            setPixel(3 + y_offset,4 + x_offset,1);
+            setPixel(3 + y_offset,5 + x_offset,1);
+
+        case 8:
+            setPixel(0 + y_offset,2 + x_offset,1);
+            setPixel(0 + y_offset,3 + x_offset,1);
+            setPixel(0 + y_offset,4 + x_offset,1);
+            setPixel(0 + y_offset,5 + x_offset,1);
+
+            setPixel(1 + y_offset,1 + x_offset,1);
+            setPixel(1 + y_offset,2 + x_offset,1);
+            setPixel(1 + y_offset,3 + x_offset,1);
+            setPixel(1 + y_offset,4 + x_offset,1);
+            setPixel(1 + y_offset,5 + x_offset,1);
+            setPixel(1 + y_offset,6 + x_offset,1);
+
+            setPixel(2 + y_offset,1 + x_offset,1);
+            setPixel(2 + y_offset,2 + x_offset,1);
+            setPixel(2 + y_offset,5 + x_offset,1);
+            setPixel(2 + y_offset,6 + x_offset,1);
+
+            setPixel(3 + y_offset,3 + x_offset,1);
+            setPixel(3 + y_offset,4 + x_offset,1);
+
+            setPixel(4 + y_offset,1 + x_offset,1);
+            setPixel(4 + y_offset,2 + x_offset,1);
+            setPixel(4 + y_offset,5 + x_offset,1);
+            setPixel(4 + y_offset,6 + x_offset,1);
+
+            setPixel(5 + y_offset,1 + x_offset,1);
+            setPixel(5 + y_offset,2 + x_offset,1);
+            setPixel(5 + y_offset,3 + x_offset,1);
+            setPixel(5 + y_offset,4 + x_offset,1);
+            setPixel(5 + y_offset,5 + x_offset,1);
+            setPixel(5 + y_offset,6 + x_offset,1);
+
+            setPixel(6 + y_offset,2 + x_offset,1);
+            setPixel(6 + y_offset,3 + x_offset,1);
+            setPixel(6 + y_offset,4 + x_offset,1);
+            setPixel(6 + y_offset,5 + x_offset,1);
+
+        case 9:
+            setPixel(0 + y_offset,2 + x_offset,1);
+            setPixel(0 + y_offset,3 + x_offset,1);
+            setPixel(0 + y_offset,4 + x_offset,1);
+            setPixel(0 + y_offset,5 + x_offset,1);
+
+            setPixel(1 + y_offset,1 + x_offset,1);
+            setPixel(1 + y_offset,2 + x_offset,1);
+            setPixel(1 + y_offset,3 + x_offset,1);
+            setPixel(1 + y_offset,4 + x_offset,1);
+            setPixel(1 + y_offset,5 + x_offset,1);
+            setPixel(1 + y_offset,6 + x_offset,1);
+
+            setPixel(2 + y_offset,1 + x_offset,1);
+            setPixel(2 + y_offset,2 + x_offset,1);
+            setPixel(2 + y_offset,5 + x_offset,1);
+            setPixel(2 + y_offset,6 + x_offset,1);
+
+            setPixel(3 + y_offset,1 + x_offset,1);
+            setPixel(3 + y_offset,2 + x_offset,1);
+            setPixel(3 + y_offset,3 + x_offset,1);
+            setPixel(3 + y_offset,4 + x_offset,1);
+            setPixel(3 + y_offset,5 + x_offset,1);
+            setPixel(3 + y_offset,6 + x_offset,1);
+
+            setPixel(4 + y_offset,1 + x_offset,1);
+            setPixel(4 + y_offset,2 + x_offset,1);
+
+            setPixel(5 + y_offset,1 + x_offset,1);
+            setPixel(5 + y_offset,2 + x_offset,1);
+            setPixel(5 + y_offset,3 + x_offset,1);
+            setPixel(5 + y_offset,4 + x_offset,1);
+            setPixel(5 + y_offset,5 + x_offset,1);
+            setPixel(5 + y_offset,6 + x_offset,1);
+
+            setPixel(6 + y_offset,2 + x_offset,1);
+            setPixel(6 + y_offset,3 + x_offset,1);
+            setPixel(6 + y_offset,4 + x_offset,1);
+            setPixel(6 + y_offset,5 + x_offset,1);
+
+
+        default:
+            break;
+    }
+    show();
+}

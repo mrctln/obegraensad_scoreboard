@@ -23,10 +23,22 @@ void setup()
 }
 void loop()
 {
+  for (int i=0; i<16; i++)
+    {
+      panel.setPixel(i, 0, 1);
+      panel.setPixel(0, i, 1);
+      panel.show();
+      delay(100);
+    }
 
-  panel.setPixel(0, 16, 1);
-  panel.setPixel(16, 0, 1);
-  panel.show();
-  sleep(10);
+  for (int i=0; i<16; i++)
+    {
+      panel.setPixel(i, 0, 0);
+      panel.setPixel(0, i, 0);
+      panel.show();
+      delay(100);
+    }
   panel.clear();
+  panel.show();
+  delay(1);
 }

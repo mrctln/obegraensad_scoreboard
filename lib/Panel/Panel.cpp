@@ -95,11 +95,44 @@ void Panel::showNumber(int number, int x_offset, int y_offset)
     switch (number)
     {
         case 0:
-            for (int y = 0; y < 7; y++) {
-                for (int x = 0; x < 4; x++) {
-                    setPixel(y, x, (y < 2 || y > 4) || (x < 1 || x > 4));  // Set based on conditions
-                }
-            }
+            setPixel(0 + y_offset,2 + x_offset,1);
+        setPixel(0 + y_offset,3 + x_offset,1);
+        setPixel(0 + y_offset,4 + x_offset,1);
+        setPixel(0 + y_offset,5 + x_offset,1);
+        
+        setPixel(1 + y_offset,1 + x_offset,1);
+        setPixel(1 + y_offset,2 + x_offset,1);
+        setPixel(1 + y_offset,3 + x_offset,1);
+        setPixel(1 + y_offset,4 + x_offset,1);
+        setPixel(1 + y_offset,5 + x_offset,1);
+        setPixel(1 + y_offset,6 + x_offset,1);
+
+        setPixel(2 + y_offset,1 + x_offset,1);
+        setPixel(2 + y_offset,2 + x_offset,1);
+        setPixel(2 + y_offset,5 + x_offset,1);
+        setPixel(2 + y_offset,6 + x_offset,1);
+
+        setPixel(3 + y_offset,1 + x_offset,1);
+        setPixel(3 + y_offset,2 + x_offset,1);
+        setPixel(3 + y_offset,5 + x_offset,1);
+        setPixel(3 + y_offset,6 + x_offset,1);
+
+        setPixel(4 + y_offset,1 + x_offset,1);
+        setPixel(4 + y_offset,2 + x_offset,1);
+        setPixel(4 + y_offset,5 + x_offset,1);
+        setPixel(4 + y_offset,6 + x_offset,1);
+
+        setPixel(5 + y_offset,1 + x_offset,1);
+        setPixel(5 + y_offset,2 + x_offset,1);
+        setPixel(5 + y_offset,3 + x_offset,1);
+        setPixel(5 + y_offset,4 + x_offset,1);
+        setPixel(5 + y_offset,5 + x_offset,1);
+        setPixel(5 + y_offset,6 + x_offset,1);
+
+        setPixel(6 + y_offset,2 + x_offset,1);
+        setPixel(6 + y_offset,3 + x_offset,1);
+        setPixel(6 + y_offset,4 + x_offset,1);
+        setPixel(6 + y_offset,5 + x_offset,1);
 
             break;
 

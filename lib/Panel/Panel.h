@@ -16,7 +16,6 @@ class Panel {
         void show();
         void setPixel(int x, int y, int value);
         void setBuffer(int x, int y, Screenbuffer buffer);
-        void showNumber(int number, int x_offset, int y_offset);
     private:
         int _pin_cla;
         int _pin_clk;

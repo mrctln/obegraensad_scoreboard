@@ -26,384 +26,384 @@ void showNumber(int number, int x_offset, int y_offset)
     switch (number)
     {
         case 0:
-            panel.setPixel(0 + y_offset,2 + x_offset,1);
-            panel.setPixel(0 + y_offset,3 + x_offset,1);
-            panel.setPixel(0 + y_offset,4 + x_offset,1);
-            panel.setPixel(0 + y_offset,5 + x_offset,1);
+            panel.setPixel(0 + x_offset,2 + y_offset,1);
+            panel.setPixel(0 + x_offset,3 + y_offset,1);
+            panel.setPixel(0 + x_offset,4 + y_offset,1);
+            panel.setPixel(0 + x_offset,5 + y_offset,1);
             
-            panel.setPixel(1 + y_offset,1 + x_offset,1);
-            panel.setPixel(1 + y_offset,2 + x_offset,1);
-            panel.setPixel(1 + y_offset,3 + x_offset,1);
-            panel.setPixel(1 + y_offset,4 + x_offset,1);
-            panel.setPixel(1 + y_offset,5 + x_offset,1);
-            panel.setPixel(1 + y_offset,6 + x_offset,1);
+            panel.setPixel(1 + x_offset,1 + y_offset,1);
+            panel.setPixel(1 + x_offset,2 + y_offset,1);
+            panel.setPixel(1 + x_offset,3 + y_offset,1);
+            panel.setPixel(1 + x_offset,4 + y_offset,1);
+            panel.setPixel(1 + x_offset,5 + y_offset,1);
+            panel.setPixel(1 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(2 + y_offset,1 + x_offset,1);
-            panel.setPixel(2 + y_offset,2 + x_offset,1);
-            panel.setPixel(2 + y_offset,5 + x_offset,1);
-            panel.setPixel(2 + y_offset,6 + x_offset,1);
+            panel.setPixel(2 + x_offset,1 + y_offset,1);
+            panel.setPixel(2 + x_offset,2 + y_offset,1);
+            panel.setPixel(2 + x_offset,5 + y_offset,1);
+            panel.setPixel(2 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(3 + y_offset,1 + x_offset,1);
-            panel.setPixel(3 + y_offset,2 + x_offset,1);
-            panel.setPixel(3 + y_offset,5 + x_offset,1);
-            panel.setPixel(3 + y_offset,6 + x_offset,1);
+            panel.setPixel(3 + x_offset,1 + y_offset,1);
+            panel.setPixel(3 + x_offset,2 + y_offset,1);
+            panel.setPixel(3 + x_offset,5 + y_offset,1);
+            panel.setPixel(3 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(4 + y_offset,1 + x_offset,1);
-            panel.setPixel(4 + y_offset,2 + x_offset,1);
-            panel.setPixel(4 + y_offset,5 + x_offset,1);
-            panel.setPixel(4 + y_offset,6 + x_offset,1);
+            panel.setPixel(4 + x_offset,1 + y_offset,1);
+            panel.setPixel(4 + x_offset,2 + y_offset,1);
+            panel.setPixel(4 + x_offset,5 + y_offset,1);
+            panel.setPixel(4 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(5 + y_offset,1 + x_offset,1);
-            panel.setPixel(5 + y_offset,2 + x_offset,1);
-            panel.setPixel(5 + y_offset,3 + x_offset,1);
-            panel.setPixel(5 + y_offset,4 + x_offset,1);
-            panel.setPixel(5 + y_offset,5 + x_offset,1);
-            panel.setPixel(5 + y_offset,6 + x_offset,1);
+            panel.setPixel(5 + x_offset,1 + y_offset,1);
+            panel.setPixel(5 + x_offset,2 + y_offset,1);
+            panel.setPixel(5 + x_offset,3 + y_offset,1);
+            panel.setPixel(5 + x_offset,4 + y_offset,1);
+            panel.setPixel(5 + x_offset,5 + y_offset,1);
+            panel.setPixel(5 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(6 + y_offset,2 + x_offset,1);
-            panel.setPixel(6 + y_offset,3 + x_offset,1);
-            panel.setPixel(6 + y_offset,4 + x_offset,1);
-            panel.setPixel(6 + y_offset,5 + x_offset,1);
+            panel.setPixel(6 + x_offset,2 + y_offset,1);
+            panel.setPixel(6 + x_offset,3 + y_offset,1);
+            panel.setPixel(6 + x_offset,4 + y_offset,1);
+            panel.setPixel(6 + x_offset,5 + y_offset,1);
 
             break;
 
         case 1:
-            panel.setPixel(0 + y_offset,3 + x_offset,1);
-            panel.setPixel(0 + y_offset,4 + x_offset,1);
+            panel.setPixel(0 + x_offset,3 + y_offset,1);
+            panel.setPixel(0 + x_offset,4 + y_offset,1);
             
             
-            panel.setPixel(5 + y_offset,2 + x_offset,1);
-            panel.setPixel(5 + y_offset,3 + x_offset,1);
-            panel.setPixel(5 + y_offset,4 + x_offset,1);
+            panel.setPixel(5 + x_offset,2 + y_offset,1);
+            panel.setPixel(5 + x_offset,3 + y_offset,1);
+            panel.setPixel(5 + x_offset,4 + y_offset,1);
 
-            panel.setPixel(2 + y_offset,3 + x_offset,1);
-            panel.setPixel(2 + y_offset,4 + x_offset,1);
+            panel.setPixel(2 + x_offset,3 + y_offset,1);
+            panel.setPixel(2 + x_offset,4 + y_offset,1);
 
-            panel.setPixel(3 + y_offset,3 + x_offset,1);
-            panel.setPixel(3 + y_offset,4 + x_offset,1);
+            panel.setPixel(3 + x_offset,3 + y_offset,1);
+            panel.setPixel(3 + x_offset,4 + y_offset,1);
 
-            panel.setPixel(4 + y_offset,3 + x_offset,1);
-            panel.setPixel(4 + y_offset,4 + x_offset,1);
+            panel.setPixel(4 + x_offset,3 + y_offset,1);
+            panel.setPixel(4 + x_offset,4 + y_offset,1);
 
-            panel.setPixel(1 + y_offset,3 + x_offset,1);
-            panel.setPixel(1 + y_offset,4 + x_offset,1);
+            panel.setPixel(1 + x_offset,3 + y_offset,1);
+            panel.setPixel(1 + x_offset,4 + y_offset,1);
 
-            panel.setPixel(6 + y_offset,3 + x_offset,1);
-            panel.setPixel(6 + y_offset,4 + x_offset,1);
+            panel.setPixel(6 + x_offset,3 + y_offset,1);
+            panel.setPixel(6 + x_offset,4 + y_offset,1);
 
             break;
 
         case 2:
-            panel.setPixel(6 + y_offset,2 + x_offset,1);
-            panel.setPixel(6 + y_offset,3 + x_offset,1);
-            panel.setPixel(6 + y_offset,4 + x_offset,1);
-            panel.setPixel(6 + y_offset,5 + x_offset,1);
+            panel.setPixel(6 + x_offset,2 + y_offset,1);
+            panel.setPixel(6 + x_offset,3 + y_offset,1);
+            panel.setPixel(6 + x_offset,4 + y_offset,1);
+            panel.setPixel(6 + x_offset,5 + y_offset,1);
 
-            panel.setPixel(5 + y_offset,1 + x_offset,1);
-            panel.setPixel(5 + y_offset,2 + x_offset,1);
-            panel.setPixel(5 + y_offset,3 + x_offset,1);
-            panel.setPixel(5 + y_offset,4 + x_offset,1);
-            panel.setPixel(5 + y_offset,5 + x_offset,1);
-            panel.setPixel(5 + y_offset,6 + x_offset,1);
+            panel.setPixel(5 + x_offset,1 + y_offset,1);
+            panel.setPixel(5 + x_offset,2 + y_offset,1);
+            panel.setPixel(5 + x_offset,3 + y_offset,1);
+            panel.setPixel(5 + x_offset,4 + y_offset,1);
+            panel.setPixel(5 + x_offset,5 + y_offset,1);
+            panel.setPixel(5 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(4 + y_offset,5 + x_offset,1);
-            panel.setPixel(4 + y_offset,6 + x_offset,1);
+            panel.setPixel(4 + x_offset,5 + y_offset,1);
+            panel.setPixel(4 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(3 + y_offset,3 + x_offset,1);
-            panel.setPixel(3 + y_offset,4 + x_offset,1);
-            panel.setPixel(3 + y_offset,5 + x_offset,1);
+            panel.setPixel(3 + x_offset,3 + y_offset,1);
+            panel.setPixel(3 + x_offset,4 + y_offset,1);
+            panel.setPixel(3 + x_offset,5 + y_offset,1);
 
-            panel.setPixel(2 + y_offset,2 + x_offset,1);
-            panel.setPixel(2 + y_offset,3 + x_offset,1);
+            panel.setPixel(2 + x_offset,2 + y_offset,1);
+            panel.setPixel(2 + x_offset,3 + y_offset,1);
 
-            panel.setPixel(1 + y_offset,1 + x_offset,1);
-            panel.setPixel(1 + y_offset,2 + x_offset,1);
-            panel.setPixel(1 + y_offset,3 + x_offset,1);
-            panel.setPixel(1 + y_offset,4 + x_offset,1);
-            panel.setPixel(1 + y_offset,5 + x_offset,1);
-            panel.setPixel(1 + y_offset,6 + x_offset,1);
+            panel.setPixel(1 + x_offset,1 + y_offset,1);
+            panel.setPixel(1 + x_offset,2 + y_offset,1);
+            panel.setPixel(1 + x_offset,3 + y_offset,1);
+            panel.setPixel(1 + x_offset,4 + y_offset,1);
+            panel.setPixel(1 + x_offset,5 + y_offset,1);
+            panel.setPixel(1 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(0 + y_offset,1 + x_offset,1);
-            panel.setPixel(0 + y_offset,2 + x_offset,1);
-            panel.setPixel(0 + y_offset,3 + x_offset,1);
-            panel.setPixel(0 + y_offset,4 + x_offset,1);
-            panel.setPixel(0 + y_offset,5 + x_offset,1);
-            panel.setPixel(0 + y_offset,6 + x_offset,1);
+            panel.setPixel(0 + x_offset,1 + y_offset,1);
+            panel.setPixel(0 + x_offset,2 + y_offset,1);
+            panel.setPixel(0 + x_offset,3 + y_offset,1);
+            panel.setPixel(0 + x_offset,4 + y_offset,1);
+            panel.setPixel(0 + x_offset,5 + y_offset,1);
+            panel.setPixel(0 + x_offset,6 + y_offset,1);
 
             break;
 
         case 3:
-            panel.setPixel(0 + y_offset,2 + x_offset,1);
-            panel.setPixel(0 + y_offset,3 + x_offset,1);
-            panel.setPixel(0 + y_offset,4 + x_offset,1);
-            panel.setPixel(0 + y_offset,5 + x_offset,1);
+            panel.setPixel(0 + x_offset,2 + y_offset,1);
+            panel.setPixel(0 + x_offset,3 + y_offset,1);
+            panel.setPixel(0 + x_offset,4 + y_offset,1);
+            panel.setPixel(0 + x_offset,5 + y_offset,1);
 
-            panel.setPixel(1 + y_offset,1 + x_offset,1);
-            panel.setPixel(1 + y_offset,2 + x_offset,1);
-            panel.setPixel(1 + y_offset,3 + x_offset,1);
-            panel.setPixel(1 + y_offset,4 + x_offset,1);
-            panel.setPixel(1 + y_offset,5 + x_offset,1);
-            panel.setPixel(1 + y_offset,6 + x_offset,1);
+            panel.setPixel(1 + x_offset,1 + y_offset,1);
+            panel.setPixel(1 + x_offset,2 + y_offset,1);
+            panel.setPixel(1 + x_offset,3 + y_offset,1);
+            panel.setPixel(1 + x_offset,4 + y_offset,1);
+            panel.setPixel(1 + x_offset,5 + y_offset,1);
+            panel.setPixel(1 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(2 + y_offset,5 + x_offset,1);
-            panel.setPixel(2 + y_offset,6 + x_offset,1);
+            panel.setPixel(2 + x_offset,5 + y_offset,1);
+            panel.setPixel(2 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(3 + y_offset,1 + x_offset,1);
-            panel.setPixel(3 + y_offset,2 + x_offset,1);
-            panel.setPixel(3 + y_offset,3 + x_offset,1);
-            panel.setPixel(3 + y_offset,4 + x_offset,1);
-            panel.setPixel(3 + y_offset,5 + x_offset,1);
-            panel.setPixel(3 + y_offset,6 + x_offset,1);
+            panel.setPixel(3 + x_offset,1 + y_offset,1);
+            panel.setPixel(3 + x_offset,2 + y_offset,1);
+            panel.setPixel(3 + x_offset,3 + y_offset,1);
+            panel.setPixel(3 + x_offset,4 + y_offset,1);
+            panel.setPixel(3 + x_offset,5 + y_offset,1);
+            panel.setPixel(3 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(4 + y_offset,5 + x_offset,1);
-            panel.setPixel(4 + y_offset,6 + x_offset,1);
+            panel.setPixel(4 + x_offset,5 + y_offset,1);
+            panel.setPixel(4 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(5 + y_offset,1 + x_offset,1);
-            panel.setPixel(5 + y_offset,2 + x_offset,1);
-            panel.setPixel(5 + y_offset,3 + x_offset,1);
-            panel.setPixel(5 + y_offset,4 + x_offset,1);
-            panel.setPixel(5 + y_offset,5 + x_offset,1);
-            panel.setPixel(5 + y_offset,6 + x_offset,1);
+            panel.setPixel(5 + x_offset,1 + y_offset,1);
+            panel.setPixel(5 + x_offset,2 + y_offset,1);
+            panel.setPixel(5 + x_offset,3 + y_offset,1);
+            panel.setPixel(5 + x_offset,4 + y_offset,1);
+            panel.setPixel(5 + x_offset,5 + y_offset,1);
+            panel.setPixel(5 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(6 + y_offset,2 + x_offset,1);
-            panel.setPixel(6 + y_offset,3 + x_offset,1);
-            panel.setPixel(6 + y_offset,4 + x_offset,1);
-            panel.setPixel(6 + y_offset,5 + x_offset,1);
+            panel.setPixel(6 + x_offset,2 + y_offset,1);
+            panel.setPixel(6 + x_offset,3 + y_offset,1);
+            panel.setPixel(6 + x_offset,4 + y_offset,1);
+            panel.setPixel(6 + x_offset,5 + y_offset,1);
 
             break;
 
 
         case 4:
-            panel.setPixel(6 + y_offset,1 + x_offset,1);
-            panel.setPixel(6 + y_offset,2 + x_offset,1);
-            panel.setPixel(6 + y_offset,5 + x_offset,1);
-            panel.setPixel(6 + y_offset,6 + x_offset,1);
+            panel.setPixel(6 + x_offset,1 + y_offset,1);
+            panel.setPixel(6 + x_offset,2 + y_offset,1);
+            panel.setPixel(6 + x_offset,5 + y_offset,1);
+            panel.setPixel(6 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(5 + y_offset,1 + x_offset,1);
-            panel.setPixel(5 + y_offset,2 + x_offset,1);
-            panel.setPixel(5 + y_offset,5 + x_offset,1);
-            panel.setPixel(5 + y_offset,6 + x_offset,1);
+            panel.setPixel(5 + x_offset,1 + y_offset,1);
+            panel.setPixel(5 + x_offset,2 + y_offset,1);
+            panel.setPixel(5 + x_offset,5 + y_offset,1);
+            panel.setPixel(5 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(4 + y_offset,1 + x_offset,1);
-            panel.setPixel(4 + y_offset,2 + x_offset,1);
-            panel.setPixel(4 + y_offset,5 + x_offset,1);
-            panel.setPixel(4 + y_offset,6 + x_offset,1);
+            panel.setPixel(4 + x_offset,1 + y_offset,1);
+            panel.setPixel(4 + x_offset,2 + y_offset,1);
+            panel.setPixel(4 + x_offset,5 + y_offset,1);
+            panel.setPixel(4 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(3 + y_offset,1 + x_offset,1);
-            panel.setPixel(3 + y_offset,2 + x_offset,1);
-            panel.setPixel(3 + y_offset,3 + x_offset,1);
-            panel.setPixel(3 + y_offset,4 + x_offset,1);
-            panel.setPixel(3 + y_offset,5 + x_offset,1);
-            panel.setPixel(3 + y_offset,6 + x_offset,1);
+            panel.setPixel(3 + x_offset,1 + y_offset,1);
+            panel.setPixel(3 + x_offset,2 + y_offset,1);
+            panel.setPixel(3 + x_offset,3 + y_offset,1);
+            panel.setPixel(3 + x_offset,4 + y_offset,1);
+            panel.setPixel(3 + x_offset,5 + y_offset,1);
+            panel.setPixel(3 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(2 + y_offset,5 + x_offset,1);
-            panel.setPixel(2 + y_offset,6 + x_offset,1);
+            panel.setPixel(2 + x_offset,5 + y_offset,1);
+            panel.setPixel(2 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(1 + y_offset,5 + x_offset,1);
-            panel.setPixel(1 + y_offset,6 + x_offset,1);
+            panel.setPixel(1 + x_offset,5 + y_offset,1);
+            panel.setPixel(1 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(0 + y_offset,5 + x_offset,1);
-            panel.setPixel(0 + y_offset,6 + x_offset,1);
+            panel.setPixel(0 + x_offset,5 + y_offset,1);
+            panel.setPixel(0 + x_offset,6 + y_offset,1);
 
             break;
 
         case 5:
-            panel.setPixel(6 + y_offset,1 + x_offset,1);
-            panel.setPixel(6 + y_offset,2 + x_offset,1);
-            panel.setPixel(6 + y_offset,3 + x_offset,1);
-            panel.setPixel(6 + y_offset,4 + x_offset,1);
-            panel.setPixel(6 + y_offset,5 + x_offset,1);
-            panel.setPixel(6 + y_offset,6 + x_offset,1);
+            panel.setPixel(6 + x_offset,1 + y_offset,1);
+            panel.setPixel(6 + x_offset,2 + y_offset,1);
+            panel.setPixel(6 + x_offset,3 + y_offset,1);
+            panel.setPixel(6 + x_offset,4 + y_offset,1);
+            panel.setPixel(6 + x_offset,5 + y_offset,1);
+            panel.setPixel(6 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(5 + y_offset,1 + x_offset,1);
-            panel.setPixel(5 + y_offset,2 + x_offset,1);
-            panel.setPixel(5 + y_offset,3 + x_offset,1);
-            panel.setPixel(5 + y_offset,4 + x_offset,1);
-            panel.setPixel(5 + y_offset,5 + x_offset,1);
-            panel.setPixel(5 + y_offset,6 + x_offset,1);
+            panel.setPixel(5 + x_offset,1 + y_offset,1);
+            panel.setPixel(5 + x_offset,2 + y_offset,1);
+            panel.setPixel(5 + x_offset,3 + y_offset,1);
+            panel.setPixel(5 + x_offset,4 + y_offset,1);
+            panel.setPixel(5 + x_offset,5 + y_offset,1);
+            panel.setPixel(5 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(4 + y_offset,1 + x_offset,1);
-            panel.setPixel(4 + y_offset,2 + x_offset,1);
+            panel.setPixel(4 + x_offset,1 + y_offset,1);
+            panel.setPixel(4 + x_offset,2 + y_offset,1);
 
-            panel.setPixel(3 + y_offset,1 + x_offset,1);
-            panel.setPixel(3 + y_offset,2 + x_offset,1);
-            panel.setPixel(3 + y_offset,3 + x_offset,1);
-            panel.setPixel(3 + y_offset,4 + x_offset,1);
-            panel.setPixel(3 + y_offset,5 + x_offset,1);
-            panel.setPixel(3 + y_offset,6 + x_offset,1);
+            panel.setPixel(3 + x_offset,1 + y_offset,1);
+            panel.setPixel(3 + x_offset,2 + y_offset,1);
+            panel.setPixel(3 + x_offset,3 + y_offset,1);
+            panel.setPixel(3 + x_offset,4 + y_offset,1);
+            panel.setPixel(3 + x_offset,5 + y_offset,1);
+            panel.setPixel(3 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(2 + y_offset,5 + x_offset,1);
-            panel.setPixel(2 + y_offset,6 + x_offset,1);
+            panel.setPixel(2 + x_offset,5 + y_offset,1);
+            panel.setPixel(2 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(1 + y_offset,1 + x_offset,1);
-            panel.setPixel(1 + y_offset,2 + x_offset,1);
-            panel.setPixel(1 + y_offset,3 + x_offset,1);
-            panel.setPixel(1 + y_offset,4 + x_offset,1);
-            panel.setPixel(1 + y_offset,5 + x_offset,1);
-            panel.setPixel(1 + y_offset,6 + x_offset,1);
+            panel.setPixel(1 + x_offset,1 + y_offset,1);
+            panel.setPixel(1 + x_offset,2 + y_offset,1);
+            panel.setPixel(1 + x_offset,3 + y_offset,1);
+            panel.setPixel(1 + x_offset,4 + y_offset,1);
+            panel.setPixel(1 + x_offset,5 + y_offset,1);
+            panel.setPixel(1 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(0 + y_offset,2 + x_offset,1);
-            panel.setPixel(0 + y_offset,3 + x_offset,1);
-            panel.setPixel(0 + y_offset,4 + x_offset,1);
-            panel.setPixel(0 + y_offset,5 + x_offset,1);
+            panel.setPixel(0 + x_offset,2 + y_offset,1);
+            panel.setPixel(0 + x_offset,3 + y_offset,1);
+            panel.setPixel(0 + x_offset,4 + y_offset,1);
+            panel.setPixel(0 + x_offset,5 + y_offset,1);
 
             break;
 
 
         case 6:
-            panel.setPixel(6 + y_offset,2 + x_offset,1);
-            panel.setPixel(6 + y_offset,3 + x_offset,1);
-            panel.setPixel(6 + y_offset,4 + x_offset,1);
-            panel.setPixel(6 + y_offset,5 + x_offset,1);
+            panel.setPixel(6 + x_offset,2 + y_offset,1);
+            panel.setPixel(6 + x_offset,3 + y_offset,1);
+            panel.setPixel(6 + x_offset,4 + y_offset,1);
+            panel.setPixel(6 + x_offset,5 + y_offset,1);
 
-            panel.setPixel(5 + y_offset,1 + x_offset,1);
-            panel.setPixel(5 + y_offset,2 + x_offset,1);
-            panel.setPixel(5 + y_offset,3 + x_offset,1);
-            panel.setPixel(5 + y_offset,4 + x_offset,1);
-            panel.setPixel(5 + y_offset,5 + x_offset,1);
-            panel.setPixel(5 + y_offset,6 + x_offset,1);
+            panel.setPixel(5 + x_offset,1 + y_offset,1);
+            panel.setPixel(5 + x_offset,2 + y_offset,1);
+            panel.setPixel(5 + x_offset,3 + y_offset,1);
+            panel.setPixel(5 + x_offset,4 + y_offset,1);
+            panel.setPixel(5 + x_offset,5 + y_offset,1);
+            panel.setPixel(5 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(4 + y_offset,1 + x_offset,1);
-            panel.setPixel(4 + y_offset,2 + x_offset,1);
+            panel.setPixel(4 + x_offset,1 + y_offset,1);
+            panel.setPixel(4 + x_offset,2 + y_offset,1);
 
-            panel.setPixel(3 + y_offset,1 + x_offset,1);
-            panel.setPixel(3 + y_offset,2 + x_offset,1);
-            panel.setPixel(3 + y_offset,3 + x_offset,1);
-            panel.setPixel(3 + y_offset,4 + x_offset,1);
-            panel.setPixel(3 + y_offset,5 + x_offset,1);
+            panel.setPixel(3 + x_offset,1 + y_offset,1);
+            panel.setPixel(3 + x_offset,2 + y_offset,1);
+            panel.setPixel(3 + x_offset,3 + y_offset,1);
+            panel.setPixel(3 + x_offset,4 + y_offset,1);
+            panel.setPixel(3 + x_offset,5 + y_offset,1);
 
-            panel.setPixel(2 + y_offset,1 + x_offset,1);
-            panel.setPixel(2 + y_offset,2 + x_offset,1);
-            panel.setPixel(2 + y_offset,5 + x_offset,1);
-            panel.setPixel(2 + y_offset,6 + x_offset,1);
+            panel.setPixel(2 + x_offset,1 + y_offset,1);
+            panel.setPixel(2 + x_offset,2 + y_offset,1);
+            panel.setPixel(2 + x_offset,5 + y_offset,1);
+            panel.setPixel(2 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(1 + y_offset,1 + x_offset,1);
-            panel.setPixel(1 + y_offset,2 + x_offset,1);
-            panel.setPixel(1 + y_offset,3 + x_offset,1);
-            panel.setPixel(1 + y_offset,4 + x_offset,1);
-            panel.setPixel(1 + y_offset,5 + x_offset,1);
-            panel.setPixel(1 + y_offset,6 + x_offset,1);
+            panel.setPixel(1 + x_offset,1 + y_offset,1);
+            panel.setPixel(1 + x_offset,2 + y_offset,1);
+            panel.setPixel(1 + x_offset,3 + y_offset,1);
+            panel.setPixel(1 + x_offset,4 + y_offset,1);
+            panel.setPixel(1 + x_offset,5 + y_offset,1);
+            panel.setPixel(1 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(0 + y_offset,2 + x_offset,1);
-            panel.setPixel(0 + y_offset,3 + x_offset,1);
-            panel.setPixel(0 + y_offset,4 + x_offset,1);
-            panel.setPixel(0 + y_offset,5 + x_offset,1);
+            panel.setPixel(0 + x_offset,2 + y_offset,1);
+            panel.setPixel(0 + x_offset,3 + y_offset,1);
+            panel.setPixel(0 + x_offset,4 + y_offset,1);
+            panel.setPixel(0 + x_offset,5 + y_offset,1);
 
             break;
 
         case 7:
 
-            panel.setPixel(6 + y_offset,1 + x_offset,1);
-            panel.setPixel(6 + y_offset,2 + x_offset,1);
-            panel.setPixel(6 + y_offset,3 + x_offset,1);
-            panel.setPixel(6 + y_offset,4 + x_offset,1);
-            panel.setPixel(6 + y_offset,5 + x_offset,1);
-            panel.setPixel(6 + y_offset,6 + x_offset,1);
+            panel.setPixel(6 + x_offset,1 + y_offset,1);
+            panel.setPixel(6 + x_offset,2 + y_offset,1);
+            panel.setPixel(6 + x_offset,3 + y_offset,1);
+            panel.setPixel(6 + x_offset,4 + y_offset,1);
+            panel.setPixel(6 + x_offset,5 + y_offset,1);
+            panel.setPixel(6 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(5 + y_offset,1 + x_offset,1);
-            panel.setPixel(5 + y_offset,2 + x_offset,1);
-            panel.setPixel(5 + y_offset,3 + x_offset,1);
-            panel.setPixel(5 + y_offset,4 + x_offset,1);
-            panel.setPixel(5 + y_offset,5 + x_offset,1);
-            panel.setPixel(5 + y_offset,6 + x_offset,1);
+            panel.setPixel(5 + x_offset,1 + y_offset,1);
+            panel.setPixel(5 + x_offset,2 + y_offset,1);
+            panel.setPixel(5 + x_offset,3 + y_offset,1);
+            panel.setPixel(5 + x_offset,4 + y_offset,1);
+            panel.setPixel(5 + x_offset,5 + y_offset,1);
+            panel.setPixel(5 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(4 + y_offset,5 + x_offset,1);
-            panel.setPixel(4 + y_offset,6 + x_offset,1);
+            panel.setPixel(4 + x_offset,5 + y_offset,1);
+            panel.setPixel(4 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(3 + y_offset,3 + x_offset,1);
-            panel.setPixel(3 + y_offset,4 + x_offset,1);
-            panel.setPixel(3 + y_offset,5 + x_offset,1);
+            panel.setPixel(3 + x_offset,3 + y_offset,1);
+            panel.setPixel(3 + x_offset,4 + y_offset,1);
+            panel.setPixel(3 + x_offset,5 + y_offset,1);
 
-            panel.setPixel(2 + y_offset,3 + x_offset,1);
-            panel.setPixel(2 + y_offset,4 + x_offset,1);
+            panel.setPixel(2 + x_offset,3 + y_offset,1);
+            panel.setPixel(2 + x_offset,4 + y_offset,1);
 
-            panel.setPixel(1 + y_offset,3 + x_offset,1);
-            panel.setPixel(1 + y_offset,4 + x_offset,1);
+            panel.setPixel(1 + x_offset,3 + y_offset,1);
+            panel.setPixel(1 + x_offset,4 + y_offset,1);
 
-            panel.setPixel(0 + y_offset,3 + x_offset,1);
-            panel.setPixel(0 + y_offset,4 + x_offset,1);
+            panel.setPixel(0 + x_offset,3 + y_offset,1);
+            panel.setPixel(0 + x_offset,4 + y_offset,1);
 
             break;
 
         case 8:
-            panel.setPixel(6 + y_offset,2 + x_offset,1);
-            panel.setPixel(6 + y_offset,3 + x_offset,1);
-            panel.setPixel(6 + y_offset,4 + x_offset,1);
-            panel.setPixel(6 + y_offset,5 + x_offset,1);
+            panel.setPixel(6 + x_offset,2 + y_offset,1);
+            panel.setPixel(6 + x_offset,3 + y_offset,1);
+            panel.setPixel(6 + x_offset,4 + y_offset,1);
+            panel.setPixel(6 + x_offset,5 + y_offset,1);
 
-            panel.setPixel(5 + y_offset,1 + x_offset,1);
-            panel.setPixel(5 + y_offset,2 + x_offset,1);
-            panel.setPixel(5 + y_offset,3 + x_offset,1);
-            panel.setPixel(5 + y_offset,4 + x_offset,1);
-            panel.setPixel(5 + y_offset,5 + x_offset,1);
-            panel.setPixel(5 + y_offset,6 + x_offset,1);
+            panel.setPixel(5 + x_offset,1 + y_offset,1);
+            panel.setPixel(5 + x_offset,2 + y_offset,1);
+            panel.setPixel(5 + x_offset,3 + y_offset,1);
+            panel.setPixel(5 + x_offset,4 + y_offset,1);
+            panel.setPixel(5 + x_offset,5 + y_offset,1);
+            panel.setPixel(5 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(4 + y_offset,1 + x_offset,1);
-            panel.setPixel(4 + y_offset,2 + x_offset,1);
-            panel.setPixel(4 + y_offset,5 + x_offset,1);
-            panel.setPixel(4 + y_offset,6 + x_offset,1);
+            panel.setPixel(4 + x_offset,1 + y_offset,1);
+            panel.setPixel(4 + x_offset,2 + y_offset,1);
+            panel.setPixel(4 + x_offset,5 + y_offset,1);
+            panel.setPixel(4 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(3 + y_offset,3 + x_offset,1);
-            panel.setPixel(3 + y_offset,4 + x_offset,1);
+            panel.setPixel(3 + x_offset,3 + y_offset,1);
+            panel.setPixel(3 + x_offset,4 + y_offset,1);
 
-            panel.setPixel(2 + y_offset,1 + x_offset,1);
-            panel.setPixel(2 + y_offset,2 + x_offset,1);
-            panel.setPixel(2 + y_offset,5 + x_offset,1);
-            panel.setPixel(2 + y_offset,6 + x_offset,1);
+            panel.setPixel(2 + x_offset,1 + y_offset,1);
+            panel.setPixel(2 + x_offset,2 + y_offset,1);
+            panel.setPixel(2 + x_offset,5 + y_offset,1);
+            panel.setPixel(2 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(1 + y_offset,1 + x_offset,1);
-            panel.setPixel(1 + y_offset,2 + x_offset,1);
-            panel.setPixel(1 + y_offset,3 + x_offset,1);
-            panel.setPixel(1 + y_offset,4 + x_offset,1);
-            panel.setPixel(1 + y_offset,5 + x_offset,1);
-            panel.setPixel(1 + y_offset,6 + x_offset,1);
+            panel.setPixel(1 + x_offset,1 + y_offset,1);
+            panel.setPixel(1 + x_offset,2 + y_offset,1);
+            panel.setPixel(1 + x_offset,3 + y_offset,1);
+            panel.setPixel(1 + x_offset,4 + y_offset,1);
+            panel.setPixel(1 + x_offset,5 + y_offset,1);
+            panel.setPixel(1 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(0 + y_offset,2 + x_offset,1);
-            panel.setPixel(0 + y_offset,3 + x_offset,1);
-            panel.setPixel(0 + y_offset,4 + x_offset,1);
-            panel.setPixel(0 + y_offset,5 + x_offset,1);
+            panel.setPixel(0 + x_offset,2 + y_offset,1);
+            panel.setPixel(0 + x_offset,3 + y_offset,1);
+            panel.setPixel(0 + x_offset,4 + y_offset,1);
+            panel.setPixel(0 + x_offset,5 + y_offset,1);
 
             break;
 
         case 9:
-            panel.setPixel(6 + y_offset,2 + x_offset,1);
-            panel.setPixel(6 + y_offset,3 + x_offset,1);
-            panel.setPixel(6 + y_offset,4 + x_offset,1);
-            panel.setPixel(6 + y_offset,5 + x_offset,1);
+            panel.setPixel(6 + x_offset,2 + y_offset,1);
+            panel.setPixel(6 + x_offset,3 + y_offset,1);
+            panel.setPixel(6 + x_offset,4 + y_offset,1);
+            panel.setPixel(6 + x_offset,5 + y_offset,1);
 
-            panel.setPixel(5 + y_offset,1 + x_offset,1);
-            panel.setPixel(5 + y_offset,2 + x_offset,1);
-            panel.setPixel(5 + y_offset,3 + x_offset,1);
-            panel.setPixel(5 + y_offset,4 + x_offset,1);
-            panel.setPixel(5 + y_offset,5 + x_offset,1);
-            panel.setPixel(5 + y_offset,6 + x_offset,1);
+            panel.setPixel(5 + x_offset,1 + y_offset,1);
+            panel.setPixel(5 + x_offset,2 + y_offset,1);
+            panel.setPixel(5 + x_offset,3 + y_offset,1);
+            panel.setPixel(5 + x_offset,4 + y_offset,1);
+            panel.setPixel(5 + x_offset,5 + y_offset,1);
+            panel.setPixel(5 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(4 + y_offset,1 + x_offset,1);
-            panel.setPixel(4 + y_offset,2 + x_offset,1);
-            panel.setPixel(4 + y_offset,5 + x_offset,1);
-            panel.setPixel(4 + y_offset,6 + x_offset,1);
+            panel.setPixel(4 + x_offset,1 + y_offset,1);
+            panel.setPixel(4 + x_offset,2 + y_offset,1);
+            panel.setPixel(4 + x_offset,5 + y_offset,1);
+            panel.setPixel(4 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(3 + y_offset,1 + x_offset,1);
-            panel.setPixel(3 + y_offset,2 + x_offset,1);
-            panel.setPixel(3 + y_offset,3 + x_offset,1);
-            panel.setPixel(3 + y_offset,4 + x_offset,1);
-            panel.setPixel(3 + y_offset,5 + x_offset,1);
-            panel.setPixel(3 + y_offset,6 + x_offset,1);
+            panel.setPixel(3 + x_offset,1 + y_offset,1);
+            panel.setPixel(3 + x_offset,2 + y_offset,1);
+            panel.setPixel(3 + x_offset,3 + y_offset,1);
+            panel.setPixel(3 + x_offset,4 + y_offset,1);
+            panel.setPixel(3 + x_offset,5 + y_offset,1);
+            panel.setPixel(3 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(2 + y_offset,1 + x_offset,1);
-            panel.setPixel(2 + y_offset,2 + x_offset,1);
+            panel.setPixel(2 + x_offset,1 + y_offset,1);
+            panel.setPixel(2 + x_offset,2 + y_offset,1);
 
-            panel.setPixel(1 + y_offset,1 + x_offset,1);
-            panel.setPixel(1 + y_offset,2 + x_offset,1);
-            panel.setPixel(1 + y_offset,3 + x_offset,1);
-            panel.setPixel(1 + y_offset,4 + x_offset,1);
-            panel.setPixel(1 + y_offset,5 + x_offset,1);
-            panel.setPixel(1 + y_offset,6 + x_offset,1);
+            panel.setPixel(1 + x_offset,1 + y_offset,1);
+            panel.setPixel(1 + x_offset,2 + y_offset,1);
+            panel.setPixel(1 + x_offset,3 + y_offset,1);
+            panel.setPixel(1 + x_offset,4 + y_offset,1);
+            panel.setPixel(1 + x_offset,5 + y_offset,1);
+            panel.setPixel(1 + x_offset,6 + y_offset,1);
 
-            panel.setPixel(0 + y_offset,2 + x_offset,1);
-            panel.setPixel(0 + y_offset,3 + x_offset,1);
-            panel.setPixel(0 + y_offset,4 + x_offset,1);
-            panel.setPixel(0 + y_offset,5 + x_offset,1);
+            panel.setPixel(0 + x_offset,2 + y_offset,1);
+            panel.setPixel(0 + x_offset,3 + y_offset,1);
+            panel.setPixel(0 + x_offset,4 + y_offset,1);
+            panel.setPixel(0 + x_offset,5 + y_offset,1);
 
             break;
 

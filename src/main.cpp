@@ -16,6 +16,11 @@ const char* password = "Test1234"; // Replace with your desired password
 
 #define TIMING 1 // Amount of microseconds between pulses when sending data
 
+int guest1 = 0;
+int guest2 = 0;
+int home1 = 0;
+int home2 = 0;
+
 
 
 Panel panel(PIN_CLA, PIN_CLK, PIN_IN, PIN_EN, TIMING);
@@ -422,6 +427,16 @@ void showNumber(int number, int x_offset, int y_offset)
     panel.show();
 }
 
+void showScore(int guest1, int guest2, int home1, int home2)
+{
+    panel.clear();
+    showNumber(guest1, 0, 9);
+    showNumber(guest2, 9, 9);
+    showNumber(home1, 0, 0);
+    showNumber(home2, 0, 9);
+    panel.show();
+}
+
 void setup()
 {
   panel.begin();
@@ -441,6 +456,8 @@ void setup()
 }
 void loop()
 {
+
+
   if (Serial.available()) {
     // Read the incoming string
     String command = Serial.readStringUntil('\n');
@@ -452,22 +469,26 @@ void loop()
 
     if (top_bot = "top"){
         if (int_number < 10 ){
-            showNumber(0,0,9);
-            showNumber(int_number,9,9);
+            guest1 = 0;
+            guest2 = int_number;
+            showScore(guest1, guest2, home1, home2);
         }
         else{
-            showNumber(number.charAt(0), 0, 9);
-            showNumber(number.charAt(1), 9, 9);
+            guest1 = number.charAt(0);
+            guest2 = number.charAt(1);
+            showScore(guest1, guest2, home1, home2);
         }
     }
     else if (top_bot = "bot"){
-            if (int_number < 10 ){
-            showNumber(0,0,0);
-            showNumber(int_number,9,0);
+        if (int_number < 10 ){
+            home1 = 0;
+            home2 = int_number;
+            showScore(guest1, guest2, home1, home2);
         }
         else{
-            showNumber(number.charAt(0), 0, 0);
-            showNumber(number.charAt(1), 9, 0);
+            home1 = number.charAt(0);
+            home2 = number.charAt(1);
+            showScore(guest1, guest2, home1, home2);
         }
     }
   }

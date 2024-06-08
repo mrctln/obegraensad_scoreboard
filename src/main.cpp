@@ -464,43 +464,39 @@ void loop()
     String command = Serial.readStringUntil('\n');
     //char command = Serial.read();
     Serial.println(command);
-    String top_bot = command.substring(0, 3);
-    String number = command.substring(4, 6);
-    Serial.println(number);
-    int int_number = number.toInt();
-    Serial.println(int_number);
+    String num1 = command.substring(0, 2);
+    String num2 = command.substring(2, 4);
+    Serial.println(num1);
+    int int_num1 = num1.toInt();
+    Serial.println("num1 = " + int_num1);
+    int int_num2 = num2.toInt();
+    Serial.println("num2 = " + int_num2);
 
-    if (top_bot = "top"){
-        if (int_number < 10 ){
-            guest1 = 0;
-            guest2 = int_number;
-            Serial.println(guest1, guest2);
-            Serial.println(home1, home2);
-            showScore(guest1, guest2, home1, home2);
-        }
-        else{
-            guest1 = number.charAt(0);
-            guest2 = number.charAt(1);
-            Serial.println(guest1, guest2);
-            Serial.println(home1, home2);
-            showScore(guest1, guest2, home1, home2);
-        }
+    if (int_num1 < 10){
+        guest1 = 0;
+        guest2 = int_num1;
     }
     else {
-        if (int_number < 10 ){
-            home1 = 0;
-            home2 = int_number;
-            Serial.println(guest1, guest2);
-            Serial.println(home1, home2);
-            showScore(guest1, guest2, home1, home2);
-        }
-        else{
-            home1 = number.charAt(0);
-            home2 = number.charAt(1);
-            Serial.println(guest1, guest2);
-            Serial.println(home1, home2);
-            showScore(guest1, guest2, home1, home2);
-        }
+        guest1 = num1.charAt(0);
+        guest2 = num1.charAt(1);
+
     }
+    if (int_num2 < 10){
+        home1 = 0;
+        home2 = int_num1;
+    }
+    else {
+        home1 = num2.charAt(0);
+        home2 = num2.charAt(1);
+
+    }
+    Serial.println("------------\n");
+    Serial.println("guest1: " + guest1);
+    Serial.println("guest2: " + guest2);
+    Serial.println("home1: " + home1);
+    Serial.println("home2: " + home2);
+    Serial.println("------------\n");
+
+    showScore(guest1, guest2, home1, home2);
   }
 }

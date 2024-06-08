@@ -456,14 +456,14 @@ void loop()
             showNumber(int_number,9,9);
         }
         else{
-            showNumber(number.charAt(0), 0, 0);
-            showNumber(number.charAt(1), 0, 0);
+            showNumber(number.charAt(0), 0, 9);
+            showNumber(number.charAt(1), 9, 9);
         }
     }
     else if (top_bot = "bot"){
             if (int_number < 10 ){
-            showNumber(0,0,9);
-            showNumber(int_number,9,9);
+            showNumber(0,0,0);
+            showNumber(int_number,9,0);
         }
         else{
             showNumber(number.charAt(0), 0, 0);

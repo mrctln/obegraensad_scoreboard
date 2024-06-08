@@ -442,34 +442,32 @@ void setup()
 void loop()
 {
   if (Serial.available()) {
-    // Read the incoming character
+    // Read the incoming string
     String command = Serial.readStringUntil('\n');
     //char command = Serial.read();
     Serial.println(command);
     String top_bot = command.substring(0, 3);
-    String guest = command.substring(5, 6);
-    String home = command.substring(7, 8);
-    int int_guest = guest.toInt();
-    int int_home = home.toInt();
+    String number = command.substring(5, 6);
+    int int_number = number.toInt();
 
     if (top_bot = "top"){
-        if (int_guest < 10 ){
+        if (int_number < 10 ){
             showNumber(0,0,9);
-            showNumber(int_guest,9,9);
+            showNumber(int_number,9,9);
         }
         else{
-            showNumber(guest.charAt(0), 0, 0);
-            showNumber(guest.charAt(1), 0, 0);
+            showNumber(number.charAt(0), 0, 0);
+            showNumber(number.charAt(1), 0, 0);
         }
     }
     else if (top_bot = "bot"){
-            if (int_home < 10 ){
+            if (int_number < 10 ){
             showNumber(0,0,9);
-            showNumber(int_home,9,9);
+            showNumber(int_number,9,9);
         }
         else{
-            showNumber(home.charAt(0), 0, 0);
-            showNumber(home.charAt(1), 9, 0);
+            showNumber(number.charAt(0), 0, 0);
+            showNumber(number.charAt(1), 9, 0);
         }
     }
   }

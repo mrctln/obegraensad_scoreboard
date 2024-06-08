@@ -465,7 +465,7 @@ void loop()
     //char command = Serial.read();
     Serial.println(command);
     String top_bot = command.substring(0, 3);
-    String number = command.substring(5, 6);
+    String number = command.substring(4, 6);
     Serial.println(number);
     int int_number = number.toInt();
     Serial.println(int_number);
@@ -486,7 +486,7 @@ void loop()
             showScore(guest1, guest2, home1, home2);
         }
     }
-    else if (top_bot = "bot"){
+    else {
         if (int_number < 10 ){
             home1 = 0;
             home2 = int_number;

@@ -430,7 +430,7 @@ void showNumber(int number, int x_offset, int y_offset)
 void showScore(int guest1, int guest2, int home1, int home2)
 {
     panel.clear();
-    showNumber(guest1, 0, 9);
+    showNumber(guest1, 9, 0);
     showNumber(guest2, 9, 9);
     showNumber(home1, 0, 0);
     showNumber(home2, 0, 9);
@@ -453,6 +453,7 @@ void setup()
 
   Serial.print("AP IP address: ");
   Serial.println(WiFi.softAPIP());
+  showScore(guest1, guest2, home1, home2);
 }
 void loop()
 {

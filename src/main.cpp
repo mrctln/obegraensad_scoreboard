@@ -466,36 +466,29 @@ void loop()
     Serial.println(command);
     String num1 = command.substring(0, 2);
     String num2 = command.substring(2, 4);
-    Serial.println(num1);
+    
     int int_num1 = num1.toInt();
-    Serial.println("num1 = " + int_num1);
     int int_num2 = num2.toInt();
-    Serial.println("num2 = " + int_num2);
 
-    if (int_num1 < 10){
+    if (int_num1 < 10 ){
         guest1 = 0;
         guest2 = int_num1;
     }
-    else {
+    else if (int_num1 > 9 ){
         guest1 = num1.charAt(0);
         guest2 = num1.charAt(1);
+    }
 
-    }
-    if (int_num2 < 10){
+
+    if (int_num2 < 10 ){
         home1 = 0;
-        home2 = int_num1;
+        home2 = int_num2;
     }
-    else {
+    else if (int_num2 > 9 ){
         home1 = num2.charAt(0);
         home2 = num2.charAt(1);
-
     }
-    Serial.println("------------\n");
-    Serial.println("guest1: " + guest1);
-    Serial.println("guest2: " + guest2);
-    Serial.println("home1: " + home1);
-    Serial.println("home2: " + home2);
-    Serial.println("------------\n");
+
 
     showScore(guest1, guest2, home1, home2);
   }

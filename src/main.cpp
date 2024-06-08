@@ -3,7 +3,7 @@
 #include <WiFi.h>
 
 const char* ssid = "ESP32-WOODIES"; // Replace with your desired SSID
-const char* password = "Test"; // Replace with your desired password
+const char* password = "Test1234"; // Replace with your desired password
 
 
 #define PIN_BT 16 // button interrupt pin
@@ -443,18 +443,19 @@ void loop()
   if (Serial.available()) {
     // Read the incoming character
     char command = Serial.read();
+    Serial.println(command);
 
     // Switch based on the received command
     switch (command) {
-      case 'Score 1': // Command to turn on LED
+      case '1': 
         showNumber(1,0,0);
         break;
 
-      case 'Score 2': // Command to turn off LED
+      case '2':
         showNumber(2,0,0);
         break;
 
-      case 'Score 3': // Command to read sensor value
+      case '3':
         showNumber(3,0,0);
         break;
 

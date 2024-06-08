@@ -466,17 +466,23 @@ void loop()
     Serial.println(command);
     String top_bot = command.substring(0, 3);
     String number = command.substring(5, 6);
+    Serial.println(number);
     int int_number = number.toInt();
+    Serial.println(int_number);
 
     if (top_bot = "top"){
         if (int_number < 10 ){
             guest1 = 0;
             guest2 = int_number;
+            Serial.println(guest1, guest2);
+            Serial.println(home1, home2);
             showScore(guest1, guest2, home1, home2);
         }
         else{
             guest1 = number.charAt(0);
             guest2 = number.charAt(1);
+            Serial.println(guest1, guest2);
+            Serial.println(home1, home2);
             showScore(guest1, guest2, home1, home2);
         }
     }
@@ -484,11 +490,15 @@ void loop()
         if (int_number < 10 ){
             home1 = 0;
             home2 = int_number;
+            Serial.println(guest1, guest2);
+            Serial.println(home1, home2);
             showScore(guest1, guest2, home1, home2);
         }
         else{
             home1 = number.charAt(0);
             home2 = number.charAt(1);
+            Serial.println(guest1, guest2);
+            Serial.println(home1, home2);
             showScore(guest1, guest2, home1, home2);
         }
     }

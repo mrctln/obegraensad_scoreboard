@@ -16,10 +16,10 @@ const char* password = "Test1234"; // Replace with your desired password
 
 #define TIMING 1 // Amount of microseconds between pulses when sending data
 
-int guest1 = 0;
-int guest2 = 0;
-int home1 = 0;
-int home2 = 0;
+int guest1 = 1;
+int guest2 = 2;
+int home1 = 3;
+int home2 = 4;
 
 
 
@@ -430,10 +430,10 @@ void showNumber(int number, int x_offset, int y_offset)
 void showScore(int guest1, int guest2, int home1, int home2)
 {
     panel.clear();
-    showNumber(guest1, 9, 0);
+    showNumber(guest1, 0, 9);
     showNumber(guest2, 9, 9);
     showNumber(home1, 0, 0);
-    showNumber(home2, 0, 9);
+    showNumber(home2, 9, 0);
     panel.show();
 }
 
@@ -475,8 +475,10 @@ void loop()
         guest2 = int_num1;
     }
     else if (int_num1 > 9 ){
-        guest1 = num1.charAt(0);
-        guest2 = num1.charAt(1);
+        char guest1_string = num1.charAt(0);
+        guest1 = guest1_string - '0';
+        char guest2_string = num1.charAt(1);
+        guest2 = guest2_string - '0';
     }
 
 
@@ -485,8 +487,10 @@ void loop()
         home2 = int_num2;
     }
     else if (int_num2 > 9 ){
-        home1 = num2.charAt(0);
-        home2 = num2.charAt(1);
+        char home1_string = num2.charAt(0);
+        home1 = home1_string - '0';
+        char home2_string = num2.charAt(1);
+        home2 = home2_string - '0';
     }
 
 

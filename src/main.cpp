@@ -424,15 +424,86 @@ void setup()
 }
 void loop()
 {
-  for (int i=0; i > 10; i++)
-  {
-    panel.clear();
-    showNumber(i, 0, 0);
-    showNumber(i, 9, 0);
-    showNumber(i, 0, 9);
-    showNumber(i, 9, 9);
+    showNumber(0,0,0);
+    showNumber(0,9,0);
+    showNumber(0,0,9);
+    showNumber(0,9,9);
     panel.show();
-    delay (2000);
-  };
+    delay(2000);
+    panel.clear();
+
+    showNumber(1,0,0);
+    showNumber(1,9,0);
+    showNumber(1,0,9);
+    showNumber(1,9,9);
+    panel.show();
+    delay(2000);
+    panel.clear();
+
+    showNumber(2,0,0);
+    showNumber(2,9,0);
+    showNumber(2,0,9);
+    showNumber(2,9,9);
+    panel.show();
+    delay(2000);
+    panel.clear();
+
+    showNumber(3,0,0);
+    showNumber(3,9,0);
+    showNumber(3,0,9);
+    showNumber(3,9,9);
+    panel.show();
+    delay(2000);
+    panel.clear();
+
+    showNumber(4,0,0);
+    showNumber(4,9,0);
+    showNumber(4,0,9);
+    showNumber(4,9,9);
+    panel.show();
+    delay(2000);
+    panel.clear();
+
+    showNumber(5,0,0);
+    showNumber(5,9,0);
+    showNumber(5,0,9);
+    showNumber(5,9,9);
+    panel.show();
+    delay(2000);
+    panel.clear();
+
+    showNumber(6,0,0);
+    showNumber(6,9,0);
+    showNumber(6,0,9);
+    showNumber(6,9,9);
+    panel.show();
+    delay(2000);
+    panel.clear();
+
+    showNumber(7,0,0);
+    showNumber(7,9,0);
+    showNumber(7,0,9);
+    showNumber(7,9,9);
+    panel.show();
+    delay(2000);
+    panel.clear();
+
+    showNumber(8,0,0);
+    showNumber(8,9,0);
+    showNumber(8,0,9);
+    showNumber(8,9,9);
+    panel.show();
+    delay(2000);
+    panel.clear();
+
+    showNumber(9,0,0);
+    showNumber(9,9,0);
+    showNumber(9,0,9);
+    showNumber(9,9,9);
+    panel.show();
+    delay(2000);
+    panel.clear();
+
+    
 
 }

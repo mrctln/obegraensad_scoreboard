@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <Panel.h>
 #include <WiFi.h>
+#include <String.h>
 
 const char* ssid = "ESP32-WOODIES"; // Replace with your desired SSID
 const char* password = "Test1234"; // Replace with your desired password
@@ -442,25 +443,34 @@ void loop()
 {
   if (Serial.available()) {
     // Read the incoming character
-    char command = Serial.read();
+    String command = Serial.readStringUntil('\n');
+    //char command = Serial.read();
     Serial.println(command);
+    String top_bot = command.substring(0, 3);
+    String guest = command.substring(5, 6);
+    String home = command.substring(7, 8);
+    int int_guest = guest.toInt();
+    int int_home = home.toInt();
 
-    // Switch based on the received command
-    switch (command) {
-      case '1': 
-        showNumber(1,0,0);
-        break;
-
-      case '2':
-        showNumber(2,0,0);
-        break;
-
-      case '3':
-        showNumber(3,0,0);
-        break;
-
-      default: // Invalid command
-        Serial.println("Invalid command");
+    if (top_bot = "top"){
+        if (int_guest < 10 ){
+            showNumber(0,0,9);
+            showNumber(int_guest,9,9);
+        }
+        else{
+            showNumber(guest.charAt(0), 0, 0);
+            showNumber(guest.charAt(1), 0, 0);
+        }
+    }
+    else if (top_bot = "bot"){
+            if (int_home < 10 ){
+            showNumber(0,0,9);
+            showNumber(int_home,9,9);
+        }
+        else{
+            showNumber(home.charAt(0), 0, 0);
+            showNumber(home.charAt(1), 9, 0);
+        }
     }
   }
 }

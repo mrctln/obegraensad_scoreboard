@@ -1,5 +1,10 @@
 #include <Arduino.h>
 #include <Panel.h>
+#include <WiFi.h>
+
+const char* ssid = "ESP32-WOODIES"; // Replace with your desired SSID
+const char* password = "Test"; // Replace with your desired password
+
 
 #define PIN_BT 16 // button interrupt pin
 
@@ -9,6 +14,8 @@
 #define PIN_EN 26  // Enable pin (EN on IKEA panel)
 
 #define TIMING 1 // Amount of microseconds between pulses when sending data
+
+
 
 Panel panel(PIN_CLA, PIN_CLK, PIN_IN, PIN_EN, TIMING);
 
@@ -419,20 +426,40 @@ void setup()
   panel.begin();
   panel.clear();
   Serial.begin(9600);
-
   pinMode(PIN_BT, INPUT_PULLUP);
+
+  // Set WiFi to station mode
+  WiFi.mode(WIFI_STA);
+
+   // Set WiFi to AP mode and configure SSID and password
+  WiFi.mode(WIFI_AP);
+  WiFi.softAP(ssid, password);
+
+  Serial.print("AP IP address: ");
+  Serial.println(WiFi.softAPIP());
 }
 void loop()
 {
-  for (int i=0; i > 10; i++)
-  {
-    panel.clear();
-    showNumber(i, 0, 0);
-    showNumber(i, 9, 0);
-    showNumber(i, 0, 9);
-    showNumber(i, 9, 9);
-    panel.show();
-    delay (2000);
-  };
+  if (Serial.available()) {
+    // Read the incoming character
+    char command = Serial.read();
 
+    // Switch based on the received command
+    switch (command) {
+      case 'Score 1': // Command to turn on LED
+        showNumber(1,0,0);
+        break;
+
+      case 'Score 2': // Command to turn off LED
+        showNumber(2,0,0);
+        break;
+
+      case 'Score 3': // Command to read sensor value
+        showNumber(3,0,0);
+        break;
+
+      default: // Invalid command
+        Serial.println("Invalid command");
+    }
+  }
 }

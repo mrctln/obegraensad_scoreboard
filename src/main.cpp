@@ -1,10 +1,6 @@
 #include <Arduino.h>
 #include <Panel.h>
-#include <WiFi.h>
 #include <String.h>
-
-const char* ssid = "ESP32-WOODIES"; // Replace with your desired SSID
-const char* password = "Test1234"; // Replace with your desired password
 
 
 #define PIN_BT 16 // button interrupt pin
@@ -444,15 +440,6 @@ void setup()
   Serial.begin(9600);
   pinMode(PIN_BT, INPUT_PULLUP);
 
-  // Set WiFi to station mode
-  WiFi.mode(WIFI_STA);
-
-   // Set WiFi to AP mode and configure SSID and password
-  WiFi.mode(WIFI_AP);
-  WiFi.softAP(ssid, password);
-
-  Serial.print("AP IP address: ");
-  Serial.println(WiFi.softAPIP());
   showScore(guest1, guest2, home1, home2);
 }
 void loop()
